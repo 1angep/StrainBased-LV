@@ -41,9 +41,13 @@ To compute the initial (L<sub>ED</sub>) and final (L<sub>ES</sub>) quantities re
 </p>
 See video:
 ![video](images/validation.mp4)
+</p>
 
 ## LV simulation
 Final result:
-![LSdyn](images/LVdyn.gif)
+<p align="center">
+  <img src="images/LVdyn.gif" alt="lvF">
+</p>
+
 ## References
 1. J.-U. Voigt, G. Pedrizzetti, P. Lysyansky, et al., “Definitions for a common standard for 2d speckle tracking echocardiography: Consensus document of the eacvi/ase/industry task force to standardize deformation imaging,” European Heart Journal - Cardiovascular Imaging, vol. 16, no. 1, pp. 1–11, Dec. 2014, ISSN: 2047-2404. DOI: 10.1093/ehjci/jeu184
