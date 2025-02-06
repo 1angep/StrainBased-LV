@@ -19,7 +19,7 @@ Segmentation of the LV and MV structures, including the endocardium, epicardium,
 
 ### Regional subdivision
 <p align="center">
-  <img src="images/geomSub.png alt="geom">
+  <img src="images/geomSub.png" alt="geom">
 </p>
 Each region was assigned to a distinct group of vertices on the LV mesh in Blender (v  - https://www.blender.org/download/). From short-axis echocardiographic views, basal, mid, and apical levels were identified. Each level was further split into six regions based on long-axis echocardiographic views in 2-chamber, 3-chamber, and 4-chamber perspectives. 
 To establish a local coordinate system aligned with the anatomical axes, the z-axis was defined along the apex-to-base direction, representing the direction of longitudinal strain (LS). The x- and y-axes were set in the transverse plane to account for circumferential (CS) and radial strain (RS).
@@ -37,7 +37,7 @@ To establish a local coordinate system aligned with the anatomical axes, the z-a
 ## Validation
 To compute the initial (L<sub>ED</sub>) and final (L<sub>ES</sub>) quantities required from equation 2, we employed a raycasting technique. A rotating sphere emitted rays toward the center of predefined planes, designed to simulate standard echocardiographic views (Fig. 4a-d). The intersection points (p<sub>i</sub> ∈ R<sup>3</sup>) on the LV surface were recorded and mapped to the nearest mesh vertices. These vertices were grouped according to the regional subdivisions outlined in Section II-A. This process facilitated the determination of LED in the initial, undeformed geometry (ED) (Fig. 4b-e). Subsequently, the mesh was deformed to represent ES deformation by adjusting the strain curve to theoretical ϵ<sub>PSS</sub> values, and the raycasting procedure was repeated to obtain LES (Fig. 4c-f). For longitudinal and circumferential ϵ<sub>PSS</sub>, L<sub>ED</sub> and L<sub>ES</sub> corresponded to the lengths of the endocardial regional profiles (Fig. 4b). These were computed by fitting Bézier splines through the selected vertices at ED and ES using Unity’s Splines package. In contrast, for radial ϵ<sub>PSS</sub>, L<sub>ED</sub> and L<sub>ES</sub> represented the thicknesses between the endocardium and epicardium (Fig. 4e). These were calculated by averaging the distances between corresponding vertex pairs, expressed as ∥p<sub>i,endo</sub> − p<sub>i,epi</sub>∥.
 <p align="center">
-  <img src="images/valid.png alt="Raycast for deformation detection">
+  <img src="images/valid.png" alt="Raycast for deformation detection">
 </p>
 See video:
 ![video](images/validation.mp4)
