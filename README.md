@@ -39,8 +39,9 @@ To compute the initial (L<sub>ED</sub>) and final (L<sub>ES</sub>) quantities re
 <p align="center">
   <img src="images/valid.png" alt="Raycast for deformation detection">
 </p>
-See video:
-![video](images/validation.mp4)
+Raycast process:
+<p align="center">
+  <img src="images/validation.gif" alt="ray">
 </p>
 
 ## LV simulation
