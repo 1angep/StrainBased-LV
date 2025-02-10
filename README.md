@@ -50,5 +50,8 @@ Final result:
   <img src="images/LVdyn.gif" alt="lvF">
 </p>
 
+
+# Contracts
+Work in progress, contact angela.peloso@polimi.it or martina.santoro@mail.polimi.it for more!
 ## References
 1. J.-U. Voigt, G. Pedrizzetti, P. Lysyansky, et al., “Definitions for a common standard for 2d speckle tracking echocardiography: Consensus document of the eacvi/ase/industry task force to standardize deformation imaging,” European Heart Journal - Cardiovascular Imaging, vol. 16, no. 1, pp. 1–11, Dec. 2014, ISSN: 2047-2404. DOI: 10.1093/ehjci/jeu184
